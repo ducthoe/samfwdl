@@ -1,0 +1,19 @@
+[project]
+name = "samfwdl"
+version = "1.0.0"
+description = "samfwdl 1.0.0"
+requires-python = ">=3.9"
+readme = "README.md"
+dependencies = [
+    "pycryptodomex>=3.20.0",
+    "requests>=2.0.0",
+]
+
+[project.scripts]
+samfwdl = "samfwdl.cli:main"
+
+[tool.setuptools]
+packages = ["samfwdl"]
+
+[tool.setuptools.package-data]
+samfwdl = ["auth_param.dat"]
