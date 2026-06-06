@@ -1,0 +1,23 @@
+# Copyright (C) 2026 ducthoe
+# SPDX-License-Identifier: GPL-3.0-only
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "samfwdl"
+version = "1.2"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [{ name = "ducthoe" }]
+dependencies = [
+    "pycryptodomex>=3.20.0",
+    "requests>=2.0.0",
+]
+
+[project.scripts]
+samfwdl = "samfwdl.cli:main"
+
+[tool.setuptools]
+packages = ["samfwdl"]
