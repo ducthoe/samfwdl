@@ -6,7 +6,7 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "samfwdl"
+name = "asgard"
 version = "1.2"
 license = "GPL-3.0-only"
 license-files = ["LICENSE"]
@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.scripts]
-samfwdl = "samfwdl.cli:main"
+asgard = "asgard.cli:main"
 
 [tool.setuptools]
-packages = ["samfwdl"]
+packages = ["asgard"]

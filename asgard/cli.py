@@ -125,7 +125,7 @@ def _print_error(message: str) -> None:
 
 
 def _build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="samfwdl", description=f"samfwdl {__version__}")
+    parser = argparse.ArgumentParser(prog="asgard", description=f"asgard {__version__}")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     check_parser = subparsers.add_parser("checkupdate", help="Get the latest firmware version")
